@@ -1,3 +1,37 @@
-.header {
-    color: white;
+$sm-width: 768px;
+$md-width: 1199px;
+
+body {
+    background-image: url('../images/Pattern.png');
+    .header {
+        margin-top: 0.8em;
+        color: white;
+    }
+    main {
+        .container {
+
+            max-width: 1194px !important;
+
+            .items {
+                @media screen and(min-width: $sm-width) {
+                    div:last-child {
+                        position: relative !important;
+                        left: 25% !important;
+                    }
+                }
+                @media screen and(min-width: $md-width) {
+                    div:last-child {
+                        position: relative !important;
+                        left: 0 !important;
+                    }
+                }
+                .product {
+                    background-image: url(../images/Back.png);
+                    background-repeat: no-repeat;
+                    height: 480px;
+                    background-position: center;
+                }
+            }
+        }
+    }
 }
