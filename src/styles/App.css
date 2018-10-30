@@ -33,6 +33,10 @@ body main .container .items .product .product-img {
   position: relative;
 }
 
+body main .container .items .product .product-img:hover {
+  cursor: pointer;
+}
+
 body main .container .items .product .product-img .product-weight {
   background-color: deepskyblue;
   color: white;
@@ -49,7 +53,26 @@ body main .container .items .product .product-img .product-weight {
   top: 8.8em;
 }
 
+body main .container .items .product .product-selected {
+  color: deeppink;
+}
+
+body main .container .items .product .none {
+  color: lightgray;
+}
+
 body main .container .items .product .product-footer {
   color: white;
+}
+
+body main .container .items .product .product-footer span {
+  color: deepskyblue;
+  text-decoration: underline;
+  -webkit-text-decoration-style: dashed;
+          text-decoration-style: dashed;
+}
+
+body main .container .items .product .product-footer span:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=App.css.map */

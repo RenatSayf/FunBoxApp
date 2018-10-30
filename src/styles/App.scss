@@ -28,11 +28,16 @@ body {
                 .product {
                     
                     .product-img {
+                        &:hover{
+                            cursor: pointer;
+                        }
+
                         background-image: url(../images/Back.png);
                         background-repeat: no-repeat;
                         height: 480px;
                         background-position: center;
                         position: relative;
+                        
                         .product-weight{
                             background-color: deepskyblue;
                             color: white;
@@ -49,10 +54,26 @@ body {
                             top: 8.8em;
                         }
                     }
+
+                    .product-selected{
+                        color: deeppink;
+
+                    }
+
+                    .none{
+                        color: lightgray;
+                    }
                     
                     .product-footer{
                         color: white;
-                        
+                            span{
+                                color: deepskyblue;
+                                text-decoration: underline;
+                                text-decoration-style: dashed;
+                                &:hover{
+                                cursor: pointer;
+                            }
+                        }                        
                     }
                 }
                 
