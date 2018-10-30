@@ -30,9 +30,10 @@ body main .container .items .product .product-img {
   background-repeat: no-repeat;
   height: 480px;
   background-position: center;
+  position: relative;
 }
 
-body main .container .items .product .product-weight {
+body main .container .items .product .product-img .product-weight {
   background-color: deepskyblue;
   color: white;
   width: 100px;
@@ -43,9 +44,9 @@ body main .container .items .product .product-weight {
   font-size: 41px;
   line-height: 30px;
   display: inline-block;
-  position: relative !important;
-  left: 2.3em !important;
-  top: 4.8em;
+  position: absolute !important;
+  left: 5.5em !important;
+  top: 8.8em;
 }
 
 body main .container .items .product .product-footer {

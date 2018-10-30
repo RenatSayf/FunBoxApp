@@ -20,10 +20,13 @@ class Product extends Component{
                         {product.dose}
                     </div>
                     <div>
-                        мышь в подарок
+                        {product.present}
+                    </div>
+                    <div>
+                        {product.customer_satisfied}
                     </div>
                     <div className='product-weight'>
-                        0,5 кг
+                        {product.weight}
                     </div>
                 </div>
                 <div className='product-footer'>
