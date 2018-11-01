@@ -7,12 +7,13 @@ class Product extends Component{
         this.onClick = this.onClick.bind(this);
     }
     render(){
-        const product = this.props.product;
-        console.log('----', this.props.product);
-        const selected = product.product_selected;
+        const products = this.props.products;
+        console.log('----', this.props);
+        
+        const selected = products.product_selected;
         return(
             <div className='product'>
-                <div id={product.id} className={['product-img', selected].join(' ')} onClick={this.onClick}>
+                <div id={products.id} className={['product-img', selected].join(' ')} onClick={this.onClick}>
                     <div>
                         Сказочное заморское явство
                     </div>
@@ -20,19 +21,19 @@ class Product extends Component{
                         Нямушка
                     </h1>
                     <h3>
-                        {product.with_what}
+                        {products.with_what}
                     </h3>
                     <div>
-                        {product.dose}
+                        {products.dose}
                     </div>
                     <div>
-                        {product.present}
+                        {products.present}
                     </div>
                     <div>
-                        {product.customer_satisfied}
+                        {products.customer_satisfied}
                     </div>
                     <div className='product-weight'>
-                        {product.weight}
+                        {products.weight}
                     </div>
                 </div>
                 <div className='product-footer'>
@@ -43,7 +44,7 @@ class Product extends Component{
     }
 
     onClick = (event) => {
-        const s = event.currentTarget.attributes.id;
+        const s = event.currentTarget.attributes.id.nodeValue;
         debugger;
     }
 }
