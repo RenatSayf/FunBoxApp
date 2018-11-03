@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import $ from 'jquery';
 
 class Product extends Component{
     constructor(props){
@@ -12,8 +13,8 @@ class Product extends Component{
         
         const selected = products.product_selected;
         return(
-            <div className='product'>
-                <div id={products.id} className={['product-img', selected].join(' ')} onClick={this.onClick}>
+            <div id={products.id} className='product'>
+                <div className={['product-img', selected].join(' ')} onClick={this.onClick}>
                     <div>
                         Сказочное заморское явство
                     </div>
@@ -44,8 +45,13 @@ class Product extends Component{
     }
 
     onClick = (event) => {
-        const s = event.currentTarget.attributes.id.nodeValue;
+        let parentId = event.currentTarget.parentNode.id;
+        if(parentId === "" || parentId === null || parentId === undefined) {
+            parentId = event.currentTarget.parentNode.parentNode.id;
+        }
+        const jq = $('#' + parentId + '  > div.product-img');
         debugger;
+        $('#' + parentId + '  > div.product-img').css('background-image','url("/static/media/SelectedBack.png")');
     }
 }
 
