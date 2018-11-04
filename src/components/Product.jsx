@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import $ from 'jquery';
 import notSelectedBack from '../images/Back.png'
 import selectedBack from '../images/SelectedBack.png';
 import disabledBack from '../images/DisabledBack.png'
