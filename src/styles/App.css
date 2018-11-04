@@ -26,8 +26,6 @@ body main .container {
 }
 
 body main .container .items .product .product-img {
-  z-index: 1 !important;
-  background-image: url(../images/Back.png);
   background-repeat: no-repeat;
   height: 480px;
   background-position: center;

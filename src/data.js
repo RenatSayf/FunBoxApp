@@ -9,7 +9,8 @@ export default[
         "product_footer1":"Чего сидишь? Порадуй коте, купи",
         "product_footer2":"Отличное лакомство с фуа-гра",
         "product_footer3":"Печалька, с фуа-гра закончился.",
-        "product_selected":""
+        "product_selected":false,
+        "presence":true
     },
     {
         "id":"2",
@@ -21,7 +22,8 @@ export default[
         "product_footer1":"Чего сидишь? Порадуй коте, купи",
         "product_footer2":"Головы щучьи с чесноком, да свежайшая семгушка",
         "product_footer3":"Печалька, с рыбой закончился",
-        "product_selected":""
+        "product_selected":false,
+        "presence":true
     },
     {
         "id":"3",
@@ -33,6 +35,7 @@ export default[
         "product_footer1":"Чего сидишь? Порадуй коте, купи",
         "product_footer2":"Нежная мякоть курочки",
         "product_footer3":"Печалька, с курой закончились",
-        "product_selected":"none"
+        "product_selected":false,
+        "presence":false
     }
 ]

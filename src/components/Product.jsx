@@ -1,20 +1,24 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
+import notSelectedBack from '../images/Back.png'
+import selectedBack from '../images/SelectedBack.png';
+import disabledBack from '../images/DisabledBack.png'
 
-class Product extends Component{
-    constructor(props){
-        super(props);
-        this.state = {isToggleOn: true};
-        this.onClick = this.onClick.bind(this);
+class Product extends Component{    
+    state = {
+        isPresence : this.props.products.presence,
+        isSelected : this.props.products.product_selected
     }
     render(){
         const products = this.props.products;
-        console.log('----', this.props);
-        
-        const selected = products.product_selected;
+        const onClickEvent = this.state.isPresence ? this.onClick : null;
+        let bgImage = this.state.isPresence ? `url(${notSelectedBack})` : `url(${disabledBack})`;
+        if (this.state.isSelected) {
+            bgImage = `url(${selectedBack})`;
+        }
         return(
             <div id={products.id} className='product'>
-                <div className={['product-img', selected].join(' ')} onClick={this.onClick}>
+                <div className='product-img' onClick={onClickEvent} style={{backgroundImage: bgImage}}>
                     <div>
                         Сказочное заморское явство
                     </div>
@@ -38,20 +42,21 @@ class Product extends Component{
                     </div>
                 </div>
                 <div className='product-footer'>
-                    Чего сидишь, Порадуй котэ, <span onClick={this.onClick}>купи.</span>
+                    Чего сидишь, Порадуй котэ, <span onClick={onClickEvent}>купи.</span>
                 </div>
             </div>
         )        
     }
 
     onClick = (event) => {
-        let parentId = event.currentTarget.parentNode.id;
-        if(parentId === "" || parentId === null || parentId === undefined) {
-            parentId = event.currentTarget.parentNode.parentNode.id;
-        }
-        const jq = $('#' + parentId + '  > div.product-img');
-        debugger;
-        $('#' + parentId + '  > div.product-img').css('background-image','url("/static/media/SelectedBack.png")');
+        // let parentId = event.currentTarget.parentNode.id;
+        // if(parentId === "" || parentId === null || parentId === undefined) {
+        //     parentId = event.currentTarget.parentNode.parentNode.id;
+        // }
+        // $('#' + parentId + '  > div.product-img').css('background-image','url(' + selectedBack + ')');
+        this.setState({
+            isSelected : !this.state.isSelected
+        })
     }
 }
 
