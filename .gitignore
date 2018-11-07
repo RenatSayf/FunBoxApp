@@ -19,3 +19,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+PsStyles/DisabledStyle.txt
+PsStyles/SelectedStyle.txt
+PsStyles/NotSelectedStyle.txt
