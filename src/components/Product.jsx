@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import notSelectedBack from '../images/Back.png'
-import selectedBack from '../images/SelectedBack.png';
-import disabledBack from '../images/DisabledBack.png'
 
 class Product extends Component{    
     state = {
@@ -10,6 +7,11 @@ class Product extends Component{
         isBuyReferenced : this.props.products.buy_referenced
     }
     render(){
+        const products = this.props.products;
+        const onClickEvent = this.state.isPresence ? this.onClick : null;
+        let buyReferenced = this.state.isPresence ? " купи" : "";
+        let productFooterContent = products.product_footer1;
+
         let productClass = 'product-non-selected';
         let productImgClass = 'product-img-non-selected';
         let productTagLineClass = 'product-tagline-non-selected';
@@ -19,17 +21,17 @@ class Product extends Component{
         let productPresentClass = 'product-present-non-selected';
         let productCustomerSatisfiedClass = 'product-customer-satisfied-non-selected';
         let productWeightClass = 'product-weight-non-selected';
-        let productFooterClass = 'product-footer-non-selected';
-        
-
-        const products = this.props.products;
-        const onClickEvent = this.state.isPresence ? this.onClick : null;
-        let buyReferenced = this.state.isPresence ? " купи" : "";
-        let productFooterContent = products.product_footer1;
+        let productFooterClass = 'product-footer-non-selected';        
 
         if (!this.state.isPresence) {
             productClass = 'product-is-disabled';
             productImgClass = 'product-img-is-disabled';
+            productTagLineClass = 'product-tagline-is-disabled';
+            productNameClass = 'product-name-is-disabled';
+            productWithWhatClass = 'product-with-what-is-disabled';
+            productDoseClass = 'product-dose-is-disabled';
+            productPresentClass = 'product-present-is-disabled';
+            productCustomerSatisfiedClass = 'product-customer-satisfied-is-disabled';
             productWeightClass = 'product-weight-is-disabled';
             productFooterClass = 'product-footer-is-disabled';
             productFooterContent = products.product_footer3;
@@ -38,6 +40,12 @@ class Product extends Component{
         if (this.state.isSelected) {
             productClass = 'product-is-selected';
             productImgClass = 'product-img-is-selected';
+            productTagLineClass = 'product-tagline-is-selected';
+            productNameClass = 'product-name-is-selected';
+            productWithWhatClass = 'product-with-what-is-selected';
+            productDoseClass = 'product-dose-is-selected';
+            productPresentClass = 'product-present-is-selected';
+            productCustomerSatisfiedClass = 'product-customer-satisfied-is-selected';
             productWeightClass = 'product-weight-is-selected';
             productFooterClass = 'product-footer-is-selected';
             productFooterContent = products.product_footer2;
@@ -76,12 +84,7 @@ class Product extends Component{
         )        
     }
 
-    onClick = (event) => {
-        // let parentId = event.currentTarget.parentNode.id;
-        // if(parentId === "" || parentId === null || parentId === undefined) {
-        //     parentId = event.currentTarget.parentNode.parentNode.id;
-        // }
-        // $('#' + parentId + '  > div.product-img').css('background-image','url(' + selectedBack + ')');
+    onClick = () => {
         this.setState({
             isSelected : !this.state.isSelected
         })

@@ -1,10 +1,19 @@
+@font-face {
+  font-family: 'Exo';
+  src: url("../fonts/Exo2.0-Thin.otf");
+}
+
 body {
   background-image: url("../images/Pattern.png");
 }
 
 body .header {
   margin-top: 0.8em;
+}
+
+body .header h1 {
   color: white;
+  font-family: 'Exo';
 }
 
 body main .container {
@@ -38,38 +47,38 @@ body main .container .items .product-non-selected .product-img-non-selected:hove
 }
 
 body main .container .items .product-non-selected .product-img-non-selected .product-tagline-non-selected {
-  color: #666666;
+  font-family: 'Trebuchet MS';
   line-height: 1.2;
+  color: #666666;
   position: relative;
   left: 0em;
   font-size: 16px;
-  font-family: 'Trebuchet MS';
 }
 
 body main .container .items .product-non-selected .product-img-non-selected .product-name-non-selected {
-  color: black;
   font-family: 'Trebuchet MS';
+  line-height: 1.2;
+  color: black;
   font-size: 48px;
   font-weight: bold;
-  line-height: 1.2;
 }
 
 body main .container .items .product-non-selected .product-img-non-selected .product-with-what-non-selected {
+  font-family: 'Trebuchet MS';
+  line-height: 1.2;
   font-size: 24px;
-  font-family: "Trebuchet MS";
   color: black;
   font-weight: bold;
-  line-height: 1.2;
 }
 
 body main .container .items .product-non-selected .product-img-non-selected .product-dose-non-selected,
 body main .container .items .product-non-selected .product-img-non-selected .product-present-non-selected,
 body main .container .items .product-non-selected .product-img-non-selected .product-customer-satisfied-non-selected {
+  font-family: 'Trebuchet MS';
+  line-height: 1.2;
   font-size: 14px;
-  font-family: "Trebuchet MS";
   color: #666666;
   font-weight: bold;
-  line-height: 1.143;
 }
 
 body main .container .items .product-non-selected .product-img-non-selected .product-weight-non-selected {
@@ -89,10 +98,10 @@ body main .container .items .product-non-selected .product-img-non-selected .pro
 }
 
 body main .container .items .product-non-selected .product-footer-non-selected {
+  font-family: 'Trebuchet MS';
+  line-height: 1.2;
   font-size: 13px;
-  font-family: "Trebuchet MS";
   color: white;
-  line-height: 1.231;
   text-align: center;
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.004);
 }
@@ -120,6 +129,39 @@ body main .container .items .product-is-selected .product-img-is-selected:hover 
   cursor: pointer;
 }
 
+body main .container .items .product-is-selected .product-img-is-selected .product-tagline-is-selected {
+  font-family: 'Trebuchet MS';
+  line-height: 1.2;
+  font-size: 16px;
+  color: #666666;
+}
+
+body main .container .items .product-is-selected .product-img-is-selected .product-name-is-selected {
+  font-family: 'Trebuchet MS';
+  line-height: 1.2;
+  font-size: 48px;
+  color: black;
+  font-weight: bold;
+}
+
+body main .container .items .product-is-selected .product-img-is-selected .product-with-what-is-selected {
+  font-family: 'Trebuchet MS';
+  line-height: 1.2;
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+}
+
+body main .container .items .product-is-selected .product-img-is-selected .product-dose-is-selected,
+body main .container .items .product-is-selected .product-img-is-selected .product-present-is-selected,
+body main .container .items .product-is-selected .product-img-is-selected .product-customer-satisfied-is-selected {
+  font-family: 'Trebuchet MS';
+  line-height: 1.2;
+  font-size: 14px;
+  color: #666666;
+  font-weight: bold;
+}
+
 body main .container .items .product-is-selected .product-img-is-selected .product-weight-is-selected {
   background-color: #d91667;
   color: white;
@@ -137,10 +179,10 @@ body main .container .items .product-is-selected .product-img-is-selected .produ
 }
 
 body main .container .items .product-is-selected .product-footer-is-selected {
+  font-family: 'Trebuchet MS';
+  line-height: 1.2;
   font-size: 13px;
-  font-family: "Trebuchet MS";
   color: white;
-  line-height: 1.231;
   text-align: center;
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.004);
 }
@@ -154,7 +196,40 @@ body main .container .items .product-is-disabled .product-img-is-disabled {
 }
 
 body main .container .items .product-is-disabled .product-img-is-disabled:hover {
-  cursor: pointer;
+  cursor: text;
+}
+
+body main .container .items .product-is-disabled .product-img-is-disabled .product-tagline-is-disabled {
+  font-family: 'Trebuchet MS';
+  line-height: 1.2;
+  font-size: 16px;
+  color: rgba(179, 179, 179, 0.502);
+}
+
+body main .container .items .product-is-disabled .product-img-is-disabled .product-name-is-disabled {
+  font-family: 'Trebuchet MS';
+  line-height: 1.2;
+  font-size: 48px;
+  color: rgba(179, 179, 179, 0.502);
+  font-weight: bold;
+}
+
+body main .container .items .product-is-disabled .product-img-is-disabled .product-with-what-is-disabled {
+  font-family: 'Trebuchet MS';
+  line-height: 1.2;
+  font-size: 24px;
+  color: rgba(179, 179, 179, 0.502);
+  font-weight: bold;
+}
+
+body main .container .items .product-is-disabled .product-img-is-disabled .product-dose-is-disabled,
+body main .container .items .product-is-disabled .product-img-is-disabled .product-present-is-disabled,
+body main .container .items .product-is-disabled .product-img-is-disabled .product-customer-satisfied-is-disabled {
+  font-family: 'Trebuchet MS';
+  line-height: 1.2;
+  font-size: 14px;
+  color: rgba(179, 179, 179, 0.502);
+  font-weight: bold;
 }
 
 body main .container .items .product-is-disabled .product-img-is-disabled .product-weight-is-disabled {
@@ -174,10 +249,10 @@ body main .container .items .product-is-disabled .product-img-is-disabled .produ
 }
 
 body main .container .items .product-is-disabled .product-footer-is-disabled {
+  font-family: 'Trebuchet MS';
+  line-height: 1.2;
   font-size: 13px;
-  font-family: "Trebuchet MS";
   color: #ffff66;
-  line-height: 1.231;
   text-align: center;
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.004);
 }
