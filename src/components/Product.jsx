@@ -53,31 +53,32 @@ class Product extends Component{
         }
         
         return(
-            <div id={products.id} className={productClass}>
+            <div id={products.id} className={[productClass].join(' ')}>
                 <div className={productImgClass} onClick={onClickEvent}>
-                    <div className={productTagLineClass}>
+                    <div className={[productTagLineClass, 'product-tag-line'].join(' ')}>
                         {products.tagline}
                     </div>
-                    <div className={productNameClass}>
+                    <div className={[productNameClass, 'product-mame'].join(' ')}>
                         {products.product_name}
                     </div>
-                    <div className={productWithWhatClass}>
+                    <div className={[productWithWhatClass, 'product-with-what'].join(' ')}>
                         {products.with_what}
                     </div>
-                    <div className={productDoseClass}>
+                    <div className={[productDoseClass, 'product-dose'].join(' ')}>
                         {products.dose}
                     </div>
-                    <div className={productPresentClass}>
+                    <div className={[productPresentClass, 'product-present'].join(' ')}>
                         {products.present}
                     </div>
-                    <div className={productCustomerSatisfiedClass}>
+                    <div className={[productCustomerSatisfiedClass, 'product-customer-satisfied'].join(' ')}>
                         {products.customer_satisfied}
                     </div>
                     <div className={[productWeightClass, 'product-weight-cyrcle'].join(' ')}>
-                        {products.weight}
+                        {products.weight}<br/>
+                        <span className="product-weighing-unit">кг</span>
                     </div>
                 </div>
-                <div className={productFooterClass}>
+                <div className={[productFooterClass, 'text-center', 'product-footer'].join(' ')}>
                     {productFooterContent}<span onClick={onClickEvent}>{buyReferenced}</span>
                 </div>
             </div>

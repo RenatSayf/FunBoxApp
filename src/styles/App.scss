@@ -1,58 +1,122 @@
-@font-face{
+@font-face {
     font-family: 'Exo';
-    src: url('../fonts/Exo2.0-Thin.otf');    
+    src: url('../fonts/Exo2.0-Thin.otf');
 }
 
 $sm-width: 768px;
 $md-width: 1199px;
-
-$disableColorSemitransparent: rgba(179, 179, 179, 0.502);
-$disableColor: rgb(179, 179, 179);
-$disableFooterFontColor: rgb(255, 255, 102);
-$disabledWeightBackColor: rgb(179, 179, 179);
-
-$nonSelectedColor: rgb(102, 102, 102);
-$nonSelectedFooterFontColor: rgb(255, 255, 255);
-$nonSelectedWeightBackColor: rgb(22, 152, 217);
-
-$selectedColorSemitransparent: rgb(102, 102, 102);
-$selectedColor: rgb(0, 0, 0);
-$selectedFooterFontColor: rgb(255, 255, 255);
-$selectedWeightBackColor: rgb(217, 22, 103);
-
+$disableColorSemitransparent: rgba(179,
+179,
+179,
+0.502);
+$disableColor: rgb(179,
+179,
+179);
+$disableFooterFontColor: rgb(255,
+255,
+102);
+$disabledWeightBackColor: rgb(179,
+179,
+179);
+$nonSelectedColor: rgb(102,
+102,
+102);
+$nonSelectedFooterFontColor: rgb(255,
+255,
+255);
+$nonSelectedWeightBackColor: rgb(22,
+152,
+217);
+$selectedColorSemitransparent: rgb(102,
+102,
+102);
+$selectedColor: rgb(0,
+0,
+0);
+$selectedFooterFontColor: rgb(255,
+255,
+255);
+$selectedWeightBackColor: rgb(217,
+22,
+103);
 @import 'mixings';
 @import 'product_is_disabled';
-
 body {
     background-image: url('../images/Pattern.png');
-    .header {
+    header {
         margin-top: 0.8em;
-        h1{
+        h1 {
             color: white;
             font-family: 'Exo';
+            font-size: 36px;
+            margin-top: 25px;
         }
     }
     main {
-        .container {
-            max-width: 1194px !important;
-            .items {
-                @media screen and(min-width: $sm-width) {
-                    div:last-child {
-                        position: relative !important;
-                        left: 25% !important;
-                    }
-                }
-                @media screen and(min-width: $md-width) {
-                    div:last-child {
-                        position: relative !important;
-                        left: 0 !important;
-                    }
-                }
+        //width: auto;
+        margin-top: 15px; //max-width: 1194px !important;
+        // @media screen and(min-width: $sm-width) {
+        //     div:last-child {
+        //         position: relative !important;
+        //         left: 25% !important;
+        //     }
+        // }
+        // @media screen and(min-width: $md-width) {
+        //     div:last-child {
+        //         position: relative !important;
+        //         left: 0 !important;
+        //     }
+        // }
+        div {
+            @import 'product-non-selected';
+            @import 'product_is_selected';
+            @import 'product_is_disabled';
 
-                @import 'product-non-selected';
-                @import 'product_is_selected';
-                @import 'product_is_disabled';                
+            .product-tag-line{
+                position: relative !important;
+                left: -1.4em !important;
+            }
+
+            .product-mame{
+                position: relative !important;
+                left: -24px !important;
+                top: -2px !important;
+            }
+
+            .product-with-what{
+                position: relative !important;
+                left: -22px !important;
+                top: -12px !important;
+            }
+
+            .product-dose{
+                position: relative !important;
+                left: -21px !important;
+                top: 0px !important;
+            }
+
+            .product-present{
+                position: relative !important;
+                left: -21px !important;
+                top: -2px !important;
+            }
+
+            .product-customer-satisfied{
+                position: relative !important;
+                left: -21px !important;
+                top: -4px !important;
+            }
+
+            .product-footer{
+                position: relative;
+                top: 13px;
+                left: -3px;
             }
         }
+    }
+
+    .row{
+        margin-left: -45px;
+        margin-right: -45px;
     }
 }

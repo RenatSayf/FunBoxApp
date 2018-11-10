@@ -10,6 +10,6 @@ export default function ProductsList({products}) {
         });
 
     return(        
-        productsItems
+            productsItems
     )
 }

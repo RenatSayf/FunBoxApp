@@ -1,16 +1,21 @@
 @mixin product-weight-cyrcle {
     color: white;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50px;
     text-align: center;
-    padding: 20px;
+    padding: 13px;
     font-size: 41px;
     line-height: 30px;
     display: inline-block;
     position: absolute !important;
     left: 5.5em !important;
-    top: 8.8em;
+    top: 9.4em !important;
+    .product-weighing-unit{
+        font-size: 28px;
+        position: relative;
+        top: -4px;
+    }
 }
 
 @mixin product-bgimage-position {
@@ -18,9 +23,19 @@
     height: 480px;
     background-position: center;
     position: relative;
+    text-align: left;
+    padding-left: 70px;
+    padding-top: 20px;
 }
 
 @mixin common-product-description {
     font-family: 'Trebuchet MS';
-    line-height: 1.2;
+    line-height: 1.4;
 }
+
+@mixin common-description-position {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+

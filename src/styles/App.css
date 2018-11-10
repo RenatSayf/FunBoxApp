@@ -3,12 +3,21 @@
   src: url("../fonts/Exo2.0-Thin.otf");
 }
 
+.product-is-disabled {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .product-is-disabled .product-img-is-disabled {
   background-image: url("../images/DisabledBack.png");
   background-repeat: no-repeat;
   height: 480px;
   background-position: center;
   position: relative;
+  text-align: left;
+  padding-left: 70px;
+  padding-top: 20px;
 }
 
 .product-is-disabled .product-img-is-disabled:hover {
@@ -17,14 +26,14 @@
 
 .product-is-disabled .product-img-is-disabled .product-tagline-is-disabled {
   font-family: 'Trebuchet MS';
-  line-height: 1.2;
+  line-height: 1.4;
   font-size: 16px;
   color: rgba(179, 179, 179, 0.502);
 }
 
 .product-is-disabled .product-img-is-disabled .product-name-is-disabled {
   font-family: 'Trebuchet MS';
-  line-height: 1.2;
+  line-height: 1.4;
   font-size: 48px;
   color: rgba(179, 179, 179, 0.502);
   font-weight: bold;
@@ -32,7 +41,7 @@
 
 .product-is-disabled .product-img-is-disabled .product-with-what-is-disabled {
   font-family: 'Trebuchet MS';
-  line-height: 1.2;
+  line-height: 1.4;
   font-size: 24px;
   color: rgba(179, 179, 179, 0.502);
   font-weight: bold;
@@ -42,8 +51,8 @@
 .product-is-disabled .product-img-is-disabled .product-present-is-disabled,
 .product-is-disabled .product-img-is-disabled .product-customer-satisfied-is-disabled {
   font-family: 'Trebuchet MS';
-  line-height: 1.2;
-  font-size: 14px;
+  line-height: 1.4;
+  font-size: 13px;
   color: rgba(179, 179, 179, 0.502);
   font-weight: bold;
 }
@@ -51,22 +60,28 @@
 .product-is-disabled .product-img-is-disabled .product-weight-is-disabled {
   background-color: #b3b3b3;
   color: white;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50px;
   text-align: center;
-  padding: 20px;
+  padding: 13px;
   font-size: 41px;
   line-height: 30px;
   display: inline-block;
   position: absolute !important;
   left: 5.5em !important;
-  top: 8.8em;
+  top: 9.4em !important;
+}
+
+.product-is-disabled .product-img-is-disabled .product-weight-is-disabled .product-weighing-unit {
+  font-size: 28px;
+  position: relative;
+  top: -4px;
 }
 
 .product-is-disabled .product-footer-is-disabled {
   font-family: 'Trebuchet MS';
-  line-height: 1.2;
+  line-height: 1.4;
   font-size: 13px;
   color: #ffff66;
   text-align: center;
@@ -77,253 +92,332 @@ body {
   background-image: url("../images/Pattern.png");
 }
 
-body .header {
+body header {
   margin-top: 0.8em;
 }
 
-body .header h1 {
+body header h1 {
   color: white;
   font-family: 'Exo';
+  font-size: 36px;
+  margin-top: 25px;
 }
 
-body main .container {
-  max-width: 1194px !important;
+body main {
+  margin-top: 15px;
 }
 
-@media screen and (min-width: 768px) {
-  body main .container .items div:last-child {
-    position: relative !important;
-    left: 25% !important;
-  }
+body main div .product-non-selected {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media screen and (min-width: 1199px) {
-  body main .container .items div:last-child {
-    position: relative !important;
-    left: 0 !important;
-  }
-}
-
-body main .container .items .product-non-selected .product-img-non-selected {
+body main div .product-non-selected .product-img-non-selected {
   background-image: url("../images/Back.png");
   background-repeat: no-repeat;
   height: 480px;
   background-position: center;
   position: relative;
+  text-align: left;
+  padding-left: 70px;
+  padding-top: 20px;
 }
 
-body main .container .items .product-non-selected .product-img-non-selected:hover {
+body main div .product-non-selected .product-img-non-selected:hover {
   cursor: pointer;
 }
 
-body main .container .items .product-non-selected .product-img-non-selected .product-tagline-non-selected {
+body main div .product-non-selected .product-img-non-selected .product-tagline-non-selected {
   font-family: 'Trebuchet MS';
-  line-height: 1.2;
+  line-height: 1.4;
   color: #666666;
   position: relative;
   left: 0em;
   font-size: 16px;
 }
 
-body main .container .items .product-non-selected .product-img-non-selected .product-name-non-selected {
+body main div .product-non-selected .product-img-non-selected .product-name-non-selected {
   font-family: 'Trebuchet MS';
-  line-height: 1.2;
+  line-height: 1.4;
   color: black;
   font-size: 48px;
   font-weight: bold;
 }
 
-body main .container .items .product-non-selected .product-img-non-selected .product-with-what-non-selected {
+body main div .product-non-selected .product-img-non-selected .product-with-what-non-selected {
   font-family: 'Trebuchet MS';
-  line-height: 1.2;
+  line-height: 1.4;
   font-size: 24px;
   color: black;
   font-weight: bold;
 }
 
-body main .container .items .product-non-selected .product-img-non-selected .product-dose-non-selected,
-body main .container .items .product-non-selected .product-img-non-selected .product-present-non-selected,
-body main .container .items .product-non-selected .product-img-non-selected .product-customer-satisfied-non-selected {
+body main div .product-non-selected .product-img-non-selected .product-dose-non-selected,
+body main div .product-non-selected .product-img-non-selected .product-present-non-selected,
+body main div .product-non-selected .product-img-non-selected .product-customer-satisfied-non-selected {
   font-family: 'Trebuchet MS';
-  line-height: 1.2;
-  font-size: 14px;
+  line-height: 1.4;
+  font-size: 13px;
   color: #666666;
   font-weight: bold;
 }
 
-body main .container .items .product-non-selected .product-img-non-selected .product-weight-non-selected {
+body main div .product-non-selected .product-img-non-selected .product-weight-non-selected {
   background-color: #1698d9;
   color: white;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50px;
   text-align: center;
-  padding: 20px;
+  padding: 13px;
   font-size: 41px;
   line-height: 30px;
   display: inline-block;
   position: absolute !important;
   left: 5.5em !important;
-  top: 8.8em;
+  top: 9.4em !important;
 }
 
-body main .container .items .product-non-selected .product-footer-non-selected {
+body main div .product-non-selected .product-img-non-selected .product-weight-non-selected .product-weighing-unit {
+  font-size: 28px;
+  position: relative;
+  top: -4px;
+}
+
+body main div .product-non-selected .product-footer-non-selected {
   font-family: 'Trebuchet MS';
-  line-height: 1.2;
+  line-height: 1.4;
   font-size: 13px;
   color: white;
   text-align: center;
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.004);
 }
 
-body main .container .items .product-non-selected .product-footer-non-selected span {
+body main div .product-non-selected .product-footer-non-selected span {
   color: deepskyblue;
   text-decoration: underline;
   -webkit-text-decoration-style: dashed;
           text-decoration-style: dashed;
 }
 
-body main .container .items .product-non-selected .product-footer-non-selected span:hover {
+body main div .product-non-selected .product-footer-non-selected span:hover {
   cursor: pointer;
 }
 
-body main .container .items .product-is-selected .product-img-is-selected {
+body main div .product-is-selected {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body main div .product-is-selected .product-img-is-selected {
   background-image: url("../images/SelectedBack.png");
   background-repeat: no-repeat;
   height: 480px;
   background-position: center;
   position: relative;
+  text-align: left;
+  padding-left: 70px;
+  padding-top: 20px;
 }
 
-body main .container .items .product-is-selected .product-img-is-selected:hover {
+body main div .product-is-selected .product-img-is-selected:hover {
   cursor: pointer;
 }
 
-body main .container .items .product-is-selected .product-img-is-selected .product-tagline-is-selected {
+body main div .product-is-selected .product-img-is-selected .product-tagline-is-selected {
   font-family: 'Trebuchet MS';
-  line-height: 1.2;
+  line-height: 1.4;
   font-size: 16px;
   color: #666666;
 }
 
-body main .container .items .product-is-selected .product-img-is-selected .product-name-is-selected {
+body main div .product-is-selected .product-img-is-selected .product-name-is-selected {
   font-family: 'Trebuchet MS';
-  line-height: 1.2;
+  line-height: 1.4;
   font-size: 48px;
   color: black;
   font-weight: bold;
 }
 
-body main .container .items .product-is-selected .product-img-is-selected .product-with-what-is-selected {
+body main div .product-is-selected .product-img-is-selected .product-with-what-is-selected {
   font-family: 'Trebuchet MS';
-  line-height: 1.2;
+  line-height: 1.4;
   font-size: 24px;
   color: black;
   font-weight: bold;
 }
 
-body main .container .items .product-is-selected .product-img-is-selected .product-dose-is-selected,
-body main .container .items .product-is-selected .product-img-is-selected .product-present-is-selected,
-body main .container .items .product-is-selected .product-img-is-selected .product-customer-satisfied-is-selected {
+body main div .product-is-selected .product-img-is-selected .product-dose-is-selected,
+body main div .product-is-selected .product-img-is-selected .product-present-is-selected,
+body main div .product-is-selected .product-img-is-selected .product-customer-satisfied-is-selected {
   font-family: 'Trebuchet MS';
-  line-height: 1.2;
-  font-size: 14px;
+  line-height: 1.4;
+  font-size: 13px;
   color: #666666;
   font-weight: bold;
 }
 
-body main .container .items .product-is-selected .product-img-is-selected .product-weight-is-selected {
+body main div .product-is-selected .product-img-is-selected .product-weight-is-selected {
   background-color: #d91667;
   color: white;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50px;
   text-align: center;
-  padding: 20px;
+  padding: 13px;
   font-size: 41px;
   line-height: 30px;
   display: inline-block;
   position: absolute !important;
   left: 5.5em !important;
-  top: 8.8em;
+  top: 9.4em !important;
 }
 
-body main .container .items .product-is-selected .product-footer-is-selected {
+body main div .product-is-selected .product-img-is-selected .product-weight-is-selected .product-weighing-unit {
+  font-size: 28px;
+  position: relative;
+  top: -4px;
+}
+
+body main div .product-is-selected .product-footer-is-selected {
   font-family: 'Trebuchet MS';
-  line-height: 1.2;
+  line-height: 1.4;
   font-size: 13px;
   color: white;
   text-align: center;
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.004);
 }
 
-body main .container .items .product-is-disabled .product-img-is-disabled {
+body main div .product-is-disabled {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body main div .product-is-disabled .product-img-is-disabled {
   background-image: url("../images/DisabledBack.png");
   background-repeat: no-repeat;
   height: 480px;
   background-position: center;
   position: relative;
+  text-align: left;
+  padding-left: 70px;
+  padding-top: 20px;
 }
 
-body main .container .items .product-is-disabled .product-img-is-disabled:hover {
+body main div .product-is-disabled .product-img-is-disabled:hover {
   cursor: text;
 }
 
-body main .container .items .product-is-disabled .product-img-is-disabled .product-tagline-is-disabled {
+body main div .product-is-disabled .product-img-is-disabled .product-tagline-is-disabled {
   font-family: 'Trebuchet MS';
-  line-height: 1.2;
+  line-height: 1.4;
   font-size: 16px;
   color: rgba(179, 179, 179, 0.502);
 }
 
-body main .container .items .product-is-disabled .product-img-is-disabled .product-name-is-disabled {
+body main div .product-is-disabled .product-img-is-disabled .product-name-is-disabled {
   font-family: 'Trebuchet MS';
-  line-height: 1.2;
+  line-height: 1.4;
   font-size: 48px;
   color: rgba(179, 179, 179, 0.502);
   font-weight: bold;
 }
 
-body main .container .items .product-is-disabled .product-img-is-disabled .product-with-what-is-disabled {
+body main div .product-is-disabled .product-img-is-disabled .product-with-what-is-disabled {
   font-family: 'Trebuchet MS';
-  line-height: 1.2;
+  line-height: 1.4;
   font-size: 24px;
   color: rgba(179, 179, 179, 0.502);
   font-weight: bold;
 }
 
-body main .container .items .product-is-disabled .product-img-is-disabled .product-dose-is-disabled,
-body main .container .items .product-is-disabled .product-img-is-disabled .product-present-is-disabled,
-body main .container .items .product-is-disabled .product-img-is-disabled .product-customer-satisfied-is-disabled {
+body main div .product-is-disabled .product-img-is-disabled .product-dose-is-disabled,
+body main div .product-is-disabled .product-img-is-disabled .product-present-is-disabled,
+body main div .product-is-disabled .product-img-is-disabled .product-customer-satisfied-is-disabled {
   font-family: 'Trebuchet MS';
-  line-height: 1.2;
-  font-size: 14px;
+  line-height: 1.4;
+  font-size: 13px;
   color: rgba(179, 179, 179, 0.502);
   font-weight: bold;
 }
 
-body main .container .items .product-is-disabled .product-img-is-disabled .product-weight-is-disabled {
+body main div .product-is-disabled .product-img-is-disabled .product-weight-is-disabled {
   background-color: #b3b3b3;
   color: white;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50px;
   text-align: center;
-  padding: 20px;
+  padding: 13px;
   font-size: 41px;
   line-height: 30px;
   display: inline-block;
   position: absolute !important;
   left: 5.5em !important;
-  top: 8.8em;
+  top: 9.4em !important;
 }
 
-body main .container .items .product-is-disabled .product-footer-is-disabled {
+body main div .product-is-disabled .product-img-is-disabled .product-weight-is-disabled .product-weighing-unit {
+  font-size: 28px;
+  position: relative;
+  top: -4px;
+}
+
+body main div .product-is-disabled .product-footer-is-disabled {
   font-family: 'Trebuchet MS';
-  line-height: 1.2;
+  line-height: 1.4;
   font-size: 13px;
   color: #ffff66;
   text-align: center;
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.004);
+}
+
+body main div .product-tag-line {
+  position: relative !important;
+  left: -1.4em !important;
+}
+
+body main div .product-mame {
+  position: relative !important;
+  left: -24px !important;
+  top: -2px !important;
+}
+
+body main div .product-with-what {
+  position: relative !important;
+  left: -22px !important;
+  top: -12px !important;
+}
+
+body main div .product-dose {
+  position: relative !important;
+  left: -21px !important;
+  top: 0px !important;
+}
+
+body main div .product-present {
+  position: relative !important;
+  left: -21px !important;
+  top: -2px !important;
+}
+
+body main div .product-customer-satisfied {
+  position: relative !important;
+  left: -21px !important;
+  top: -4px !important;
+}
+
+body main div .product-footer {
+  position: relative;
+  top: 13px;
+  left: -3px;
+}
+
+body .row {
+  margin-left: -45px;
+  margin-right: -45px;
 }
 /*# sourceMappingURL=App.css.map */

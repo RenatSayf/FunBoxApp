@@ -1,6 +1,7 @@
 @import 'mixings';
 
 .product-is-selected {
+    @include common-description-position();
     .product-img-is-selected {
         &:hover {
             cursor: pointer;
@@ -10,12 +11,14 @@
         
         .product-tagline-is-selected{
             @include common-product-description();
+            //@include tag-line-position();
             font-size: 16px;
             color: rgb(102, 102, 102);
         }
 
         .product-name-is-selected{
             @include common-product-description();
+            //@include product-name-position();
             font-size: 48px;
             color: rgb(0, 0, 0);
             font-weight: bold;
@@ -23,6 +26,7 @@
 
         .product-with-what-is-selected{
             @include common-product-description();
+            //@include product-with-what-position();
             font-size: 24px;
             color: rgb(0, 0, 0);
             font-weight: bold;
@@ -32,7 +36,8 @@
         .product-present-is-selected,
         .product-customer-satisfied-is-selected {
             @include common-product-description();
-            font-size: 14px;
+            //@include product-dose-position();
+            font-size: 13px;
             color: rgb(102, 102, 102);
             font-weight: bold;
         }

@@ -1,6 +1,7 @@
 @import 'mixings';
 
 .product-is-disabled {
+    @include common-description-position();
     .product-img-is-disabled {
         &:hover {
             cursor: text;
@@ -10,12 +11,14 @@
         
         .product-tagline-is-disabled{
             @include common-product-description();
+            //@include tag-line-position();
             font-size: 16px;
             color: rgba(179, 179, 179, 0.502);
         }
 
         .product-name-is-disabled{
             @include common-product-description();
+            //@include product-name-position();
             font-size: 48px;
             color: rgba(179, 179, 179, 0.502);
             font-weight: bold;
@@ -23,6 +26,7 @@
 
         .product-with-what-is-disabled {
             @include common-product-description();
+            //@include product-with-what-position();
             font-size: 24px;
             color: rgba(179, 179, 179, 0.502);
             font-weight: bold;
@@ -32,7 +36,8 @@
         .product-present-is-disabled,
         .product-customer-satisfied-is-disabled {
             @include common-product-description();
-            font-size: 14px;
+            //@include product-dose-position();
+            font-size: 13px;
             color: rgba(179, 179, 179, 0.502);
             font-weight: bold;
         }
