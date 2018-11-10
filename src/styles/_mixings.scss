@@ -1,0 +1,26 @@
+@mixin product-weight-cyrcle {
+    color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    text-align: center;
+    padding: 20px;
+    font-size: 41px;
+    line-height: 30px;
+    display: inline-block;
+    position: absolute !important;
+    left: 5.5em !important;
+    top: 8.8em;
+}
+
+@mixin product-bgimage-position {
+    background-repeat: no-repeat;
+    height: 480px;
+    background-position: center;
+    position: relative;
+}
+
+@mixin common-product-description {
+    font-family: 'Trebuchet MS';
+    line-height: 1.2;
+}

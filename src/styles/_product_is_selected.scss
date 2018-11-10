@@ -1,0 +1,52 @@
+@import 'mixings';
+
+.product-is-selected {
+    .product-img-is-selected {
+        &:hover {
+            cursor: pointer;
+        }
+        background-image: url('../images/SelectedBack.png');
+        @include product-bgimage-position();
+        
+        .product-tagline-is-selected{
+            @include common-product-description();
+            font-size: 16px;
+            color: rgb(102, 102, 102);
+        }
+
+        .product-name-is-selected{
+            @include common-product-description();
+            font-size: 48px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+
+        .product-with-what-is-selected{
+            @include common-product-description();
+            font-size: 24px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+
+        .product-dose-is-selected,
+        .product-present-is-selected,
+        .product-customer-satisfied-is-selected {
+            @include common-product-description();
+            font-size: 14px;
+            color: rgb(102, 102, 102);
+            font-weight: bold;
+        }
+
+        .product-weight-is-selected {
+            background-color: $selectedWeightBackColor;
+            @include product-weight-cyrcle();
+        }                        
+    }
+    .product-footer-is-selected{
+        @include common-product-description();
+        font-size: 13px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.004);  
+    }
+}

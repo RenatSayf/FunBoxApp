@@ -1,0 +1,53 @@
+@import 'mixings';
+
+.product-is-disabled {
+    .product-img-is-disabled {
+        &:hover {
+            cursor: text;
+        }
+        background-image: url('../images/DisabledBack.png');
+        @include product-bgimage-position();
+        
+        .product-tagline-is-disabled{
+            @include common-product-description();
+            font-size: 16px;
+            color: rgba(179, 179, 179, 0.502);
+        }
+
+        .product-name-is-disabled{
+            @include common-product-description();
+            font-size: 48px;
+            color: rgba(179, 179, 179, 0.502);
+            font-weight: bold;
+        }
+
+        .product-with-what-is-disabled {
+            @include common-product-description();
+            font-size: 24px;
+            color: rgba(179, 179, 179, 0.502);
+            font-weight: bold;
+        }
+
+        .product-dose-is-disabled, 
+        .product-present-is-disabled,
+        .product-customer-satisfied-is-disabled {
+            @include common-product-description();
+            font-size: 14px;
+            color: rgba(179, 179, 179, 0.502);
+            font-weight: bold;
+        }
+
+        .product-weight-is-disabled {
+            background-color: $disableColor;
+            @include product-weight-cyrcle();
+        }                        
+    }
+
+    .product-footer-is-disabled {
+        @include common-product-description();
+        font-size: 13px;
+        color: rgb(255, 255, 102);
+        text-align: center;
+        text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.004);
+    }
+}
