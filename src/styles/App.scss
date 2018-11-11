@@ -53,20 +53,8 @@ body {
         }
     }
     main {
-        //width: auto;
-        margin-top: 15px; //max-width: 1194px !important;
-        // @media screen and(min-width: $sm-width) {
-        //     div:last-child {
-        //         position: relative !important;
-        //         left: 25% !important;
-        //     }
-        // }
-        // @media screen and(min-width: $md-width) {
-        //     div:last-child {
-        //         position: relative !important;
-        //         left: 0 !important;
-        //     }
-        // }
+        margin-top: 15px; 
+        
         div {
                 @import 'product-non-selected';
                 @import 'product_is_selected';
