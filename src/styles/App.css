@@ -375,6 +375,10 @@ body main div .product-is-disabled .product-footer-is-disabled {
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.004);
 }
 
+body main div .product {
+  padding-bottom: 33px;
+}
+
 body main div .product-tag-line {
   position: relative !important;
   left: -1.4em !important;

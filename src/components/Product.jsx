@@ -53,7 +53,7 @@ class Product extends Component{
         }
         
         return(
-            <div id={products.id} className={[productClass].join(' ')}>
+            <div id={products.id} className={[productClass, 'product'].join(' ')}>
                 <div className={productImgClass} onClick={onClickEvent}>
                     <div className={[productTagLineClass, 'product-tag-line'].join(' ')}>
                         {products.tagline}

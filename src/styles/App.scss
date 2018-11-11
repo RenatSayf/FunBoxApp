@@ -68,9 +68,13 @@ body {
         //     }
         // }
         div {
-            @import 'product-non-selected';
-            @import 'product_is_selected';
-            @import 'product_is_disabled';
+                @import 'product-non-selected';
+                @import 'product_is_selected';
+                @import 'product_is_disabled';
+            
+            .product{
+                padding-bottom: 33px;
+            }
 
             .product-tag-line{
                 position: relative !important;
