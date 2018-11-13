@@ -41,8 +41,28 @@ $selectedWeightBackColor: rgb(217,
 103);
 @import 'mixings';
 @import 'product_is_disabled';
+
+html{
+    height: 100%;
+}
+
 body {
-    background-image: url('../images/Pattern.png');
+        background-image: url('../images/Pattern.png');
+        position: relative;
+        width: 100%;
+        height: 100%;
+        //background-size: cover;
+        &::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(to bottom, #000000, #ffffff00, #ffffff00, #000000);
+            //opacity: .6;
+        }
+
     header {
         margin-top: 0.8em;
         h1 {
@@ -53,7 +73,7 @@ body {
         }
     }
     main {
-        margin-top: 15px; 
+        height: 100%;
         
         div {
                 @import 'product-non-selected';
@@ -106,6 +126,14 @@ body {
             }
         }
     }
+
+    #root, .App, .container{
+        height: 100% !important;
+    }
+    
+    // .container{
+    //     height: 100% !important;
+    // }
 
     .row{
         margin-left: -45px;

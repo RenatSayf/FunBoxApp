@@ -11,11 +11,11 @@ class ProductsList extends Component {
         const isOdd = this.props.products.length % 2;
         let class_name = "col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 text-center";
         const productsItems = this.props.products.map((product, index) => {
-            if (index === this.props.products.length - 1 && isOdd === 1 && (screen_width > 760 && screen_width < 1030)) {
+            if (index === this.props.products.length - 1 && isOdd === 1 && (screen_width > 760 && screen_width < 1200)) {
                 class_name = "col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 offset-md-3 text-center";
             }
             return (
-                <div key={product.id} className={class_name}>
+                <div key={product.id} className={[class_name, 'my-auto'].join(' ')}>
                     <Product products={product} />
                 </div>
             )

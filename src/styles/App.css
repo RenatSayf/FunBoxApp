@@ -88,8 +88,26 @@
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.004);
 }
 
+html {
+  height: 100%;
+}
+
 body {
   background-image: url("../images/Pattern.png");
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(#ffffff00), color-stop(#ffffff00), to(#000000));
+  background-image: linear-gradient(to bottom, #000000, #ffffff00, #ffffff00, #000000);
 }
 
 body header {
@@ -104,7 +122,7 @@ body header h1 {
 }
 
 body main {
-  margin-top: 15px;
+  height: 100%;
 }
 
 body main div .product-non-selected {
@@ -418,6 +436,10 @@ body main div .product-footer {
   position: relative;
   top: 13px;
   left: -3px;
+}
+
+body #root, body .App, body .container {
+  height: 100% !important;
 }
 
 body .row {
