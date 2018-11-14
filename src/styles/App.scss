@@ -50,7 +50,6 @@ body {
         background-image: url('../images/Pattern.png');
         position: relative;
         width: 100%;
-        height: 100%;
         //background-size: cover;
         &::before {
             content: '';
@@ -70,10 +69,11 @@ body {
             font-family: 'Exo';
             font-size: 36px;
             margin-top: 25px;
+            position: relative;
+            top: 14px;
         }
     }
     main {
-        height: 100%;
         
         div {
                 @import 'product-non-selected';
@@ -127,14 +127,12 @@ body {
         }
     }
 
-    #root, .App, .container{
+    #root {
         height: 100% !important;
+        margin-top: 9em;
+        margin-bottom: 9em;
     }
     
-    // .container{
-    //     height: 100% !important;
-    // }
-
     .row{
         margin-left: -45px;
         margin-right: -45px;
