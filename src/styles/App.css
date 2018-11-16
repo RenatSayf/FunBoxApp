@@ -73,12 +73,6 @@
   top: 9.4em !important;
 }
 
-.product-is-disabled .product-img-is-disabled .product-weight-is-disabled .product-weighing-unit {
-  font-size: 28px;
-  position: relative;
-  top: -4px;
-}
-
 .product-is-disabled .product-footer-is-disabled {
   font-family: 'Trebuchet MS';
   line-height: 1.4;
@@ -117,9 +111,8 @@ body header h1 {
   color: white;
   font-family: 'Exo';
   font-size: 36px;
-  margin-top: 25px;
-  position: relative;
-  top: 14px;
+  margin-bottom: 24px;
+  margin-top: -15px;
 }
 
 body main div .product-non-selected {
@@ -192,12 +185,6 @@ body main div .product-non-selected .product-img-non-selected .product-weight-no
   position: absolute !important;
   left: 5.5em !important;
   top: 9.4em !important;
-}
-
-body main div .product-non-selected .product-img-non-selected .product-weight-non-selected .product-weighing-unit {
-  font-size: 28px;
-  position: relative;
-  top: -4px;
 }
 
 body main div .product-non-selected .product-footer-non-selected {
@@ -290,12 +277,6 @@ body main div .product-is-selected .product-img-is-selected .product-weight-is-s
   top: 9.4em !important;
 }
 
-body main div .product-is-selected .product-img-is-selected .product-weight-is-selected .product-weighing-unit {
-  font-size: 28px;
-  position: relative;
-  top: -4px;
-}
-
 body main div .product-is-selected .product-footer-is-selected {
   font-family: 'Trebuchet MS';
   line-height: 1.4;
@@ -375,12 +356,6 @@ body main div .product-is-disabled .product-img-is-disabled .product-weight-is-d
   top: 9.4em !important;
 }
 
-body main div .product-is-disabled .product-img-is-disabled .product-weight-is-disabled .product-weighing-unit {
-  font-size: 28px;
-  position: relative;
-  top: -4px;
-}
-
 body main div .product-is-disabled .product-footer-is-disabled {
   font-family: 'Trebuchet MS';
   line-height: 1.4;
@@ -427,6 +402,21 @@ body main div .product-customer-satisfied {
   position: relative !important;
   left: -21px !important;
   top: -4px !important;
+}
+
+body main div .product-weight-cyrcle .product-weighing-value {
+  font-family: 'Trebuchet MS';
+  font-size: 40px;
+  position: relative;
+  top: 0px;
+  left: -3px;
+}
+
+body main div .product-weight-cyrcle .product-weighing-unit {
+  font-size: 19px;
+  position: relative;
+  top: -11px;
+  left: -2px;
 }
 
 body main div .product-footer {

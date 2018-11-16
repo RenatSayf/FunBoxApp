@@ -74,7 +74,8 @@ class Product extends Component{
                         {products.customer_satisfied}
                     </div>
                     <div className={[productWeightClass, 'product-weight-cyrcle'].join(' ')}>
-                        {products.weight}<br/>
+                        <span className="product-weighing-value">{products.weight}</span>
+                        <br/>                        
                         <span className="product-weighing-unit">кг</span>
                     </div>
                 </div>
